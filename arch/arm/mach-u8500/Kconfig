@@ -21,8 +21,17 @@ config TARGET_STEMMY
 
 	  See board/ste/stemmy/README for details.
 
+config TARGET_NYPON
+	bool "Sony (nypon) board"
+	select MISC_INIT_R
+	help
+	  The Sony "nypon" board supports for SONY xperia P released with
+	  the ST-Ericsson NovaThor U8500 SoC.
+
+
 endchoice
 
 source "board/ste/stemmy/Kconfig"
+source "board/ste/nypon/Kconfig"
 
 endif

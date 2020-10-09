@@ -1,0 +1,12 @@
+if TARGET_NYPON
+
+config SYS_BOARD
+	default "nypon"
+
+config SYS_VENDOR
+	default "ste"
+
+config SYS_CONFIG_NAME
+	default "nypon"
+
+endif
